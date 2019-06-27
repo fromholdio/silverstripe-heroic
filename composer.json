@@ -1,0 +1,32 @@
+{
+	"name": "fromholdio/silverstripe-heroic",
+	"type": "silverstripe-vendormodule",
+	"description": "A SilverStripe module adding hero/banner area to pages",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "hero", "banner"],
+	"homepage": "https://github.com/fromholdio/silverstripe-heroic",
+	"support": {
+		"issues": "https://github.com/fromholdio/silverstripe-heroic/issues"
+	},
+	"authors": [{
+		"name": "Luke Fromhold",
+		"homepage": "https://fromhold.io"
+	}],
+	"require": {
+		"php": ">=5.6",
+		"silverstripe/vendor-plugin": "^1.0",
+		"silverstripe/cms": "^4.2",
+		"fromholdio/silverstripe-minigridfield": "^1.0.2",
+		"fromholdio/silverstripe-superlinker-ctas": "^1.0.0",
+		"ryanpotter/silverstripe-color-field": "dev-master",
+        "symbiote/silverstripe-gridfieldextensions": "^3.2",
+		"unclecheese/display-logic": "^2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Fromholdio\\Heroic\\": "src/"
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}

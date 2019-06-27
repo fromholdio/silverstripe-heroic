@@ -1,0 +1,7 @@
+---
+Name: fromholdio-heroic
+---
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Innoweb\CVC\Hero\Extensions\HeroSiteConfigExtension
