@@ -60,7 +60,6 @@ class HeroPageExtension extends SiteTreeExtension
 
     private static $hero_mode_labels = [
         self::MODE_PARENT => 'Inherit from parent',
-        self::MODE_SITE => 'Use site settings',
         self::MODE_IMAGE => 'Background Image',
         self::MODE_COLOR => 'Background Colour'
     ];
@@ -503,7 +502,7 @@ class HeroPageExtension extends SiteTreeExtension
         if (!$mode) {
             $mode = $this->getOwner()->getDefaultHeroMode();
         }
-        if ($mode === self::MODE_SITE || $mode === self::MODE_PARENT) {
+        if ($mode === self::MODE_PARENT) {
             $mode = $this->getOwner()->getInheritedHeroModeValue('Hero', $mode);
         }
         if ($this->getOwner()->hasMethod('updateInheritedHeroMode')) {
@@ -542,7 +541,7 @@ class HeroPageExtension extends SiteTreeExtension
             }
         }
         if (!$mode) {
-            $mode = self::MODE_SITE;
+            $mode = self::MODE_COLOR;
         }
         if ($this->getOwner()->hasMethod('updateDefaultHeroMode')) {
             $mode = $this->getOwner()->updateDefaultHeroMode($mode);
