@@ -1,7 +1,15 @@
 ---
 Name: fromholdio-heroic
 ---
+Page:
+  extensions:
+    - Fromholdio\Affinity\Heroic\Extensions\HeroicPageExtension
 
+---
+Name: fromholdio-heroic-nomultisites
+Except:
+  moduleexists: 'symbiote/silverstripe-multisites'
+---
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - Fromholdio\Heroic\Extensions\HeroSiteConfigExtension
+    - Fromholdio\Affinity\Heroic\Extensions\HeroicConfigExtension

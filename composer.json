@@ -1,7 +1,7 @@
 {
 	"name": "fromholdio/silverstripe-heroic",
 	"type": "silverstripe-vendormodule",
-	"description": "A SilverStripe module adding hero/banner area to pages",
+	"description": "A SilverStripe module adding full-featured, flexible hero/banner area (flat or carousel) to pages with inheritance of settings & themes, & colour/image/video backgrounds.",
 	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe", "hero", "banner"],
 	"homepage": "https://github.com/fromholdio/silverstripe-heroic",
@@ -16,10 +16,12 @@
 		"php": ">=5.6",
 		"silverstripe/vendor-plugin": "^1.0",
 		"silverstripe/cms": "^4.2",
-		"fromholdio/silverstripe-minigridfield": "^1.0.2",
-		"fromholdio/silverstripe-superlinker-ctas": "^1.0.0",
+		"fromholdio/silverstripe-minigridfield": "^1.0.3",
+		"fromholdio/silverstripe-simplevideo": "^1.0.0",
+		"fromholdio/silverstripe-superlinker-ctas": "^1.0.1",
+		"heyday/silverstripe-colorpalette": "dev-master",
 		"ryanpotter/silverstripe-color-field": "dev-master",
-        "symbiote/silverstripe-gridfieldextensions": "^3.2",
+		"symbiote/silverstripe-gridfieldextensions": "^3.2",
 		"unclecheese/display-logic": "^2.0"
 	},
 	"autoload": {

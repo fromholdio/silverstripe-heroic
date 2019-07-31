@@ -1,0 +1,46 @@
+---
+Name: fromholdio-heroic-example
+---
+Fromholdio\Heroic\Heroic:
+  enable_slides: false
+  mode_options:
+    height:
+      parent: 'Parent Height'
+      site: 'Site default height'
+      md: 'Standard'
+      lg: 'Large'
+    align_vertical:
+      bottom: false
+    align_horizontal:
+      right: false
+    text_color:
+      custom: false
+    background:
+      video: false
+    background_color:
+      custom: false
+  palettes:
+    text_color:
+      default:
+        title: 'Default'
+        hex: '000000'
+      white:
+        title: 'White'
+        hex: 'FFFFFF'
+    cta_color:
+      default:
+        title: 'Default'
+        hex: '000000'
+      alternate:
+        title: 'Yellow'
+        hex: 'FFFB34'
+    background_color:
+      default:
+        title: 'Default'
+        hex: 'FFFFFF'
+      light:
+        title: 'Light'
+        hex: 'F6F5F4'
+      dark:
+        title: 'Dark'
+        hex: '3C3E3F'
