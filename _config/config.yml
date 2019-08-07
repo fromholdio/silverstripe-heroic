@@ -3,7 +3,7 @@ Name: fromholdio-heroic
 ---
 Page:
   extensions:
-    - Fromholdio\Affinity\Heroic\Extensions\HeroicPageExtension
+    - Fromholdio\Heroic\Extensions\HeroicPageExtension
 
 ---
 Name: fromholdio-heroic-nomultisites
@@ -12,4 +12,4 @@ Except:
 ---
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - Fromholdio\Affinity\Heroic\Extensions\HeroicConfigExtension
+    - Fromholdio\Heroic\Extensions\HeroicConfigExtension
