@@ -668,9 +668,9 @@ class HeroicExtension extends DataExtension
         return $config;
     }
 
-    public function getHeroicOpacityOptions(int $multiples)
+    public function getHeroicOpacityOptions(int $multiples = null)
     {
-        if (!$multiples) {
+        if (!$multiples || $multiples < 1) {
             $multiples = 5;
         }
         $options = [];
