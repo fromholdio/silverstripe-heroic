@@ -57,6 +57,7 @@ class Heroic
             self::MODE_VIDEO => 'Attach a vimeo.com video'
         ],
         'background_color' => [
+            self::MODE_PARENT => 'Inherit from parent',
             self::MODE_SITE => 'Use site default background colour',
             self::MODE_PALETTE => 'Choose from site palette',
             self::MODE_CUSTOM => 'Select a custom colour'

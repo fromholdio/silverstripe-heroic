@@ -435,7 +435,13 @@ class HeroicExtension extends DataExtension
                     $mode = $source->getHeroicModeDefault('background_color');
                 }
 
-                if ($mode === Heroic::MODE_SITE) {
+                if ($mode === Heroic::MODE_PARENT) {
+                    $parent = $source->getHeroicParent();
+                    if ($parent) {
+                        $color = $parent->getHeroicBackgroundColor();
+                    }
+                }
+                else if ($mode === Heroic::MODE_SITE) {
                     $site = $source->getHeroicSite();
                     if ($site) {
                         $color = $site->getHeroBackgroundColor();
