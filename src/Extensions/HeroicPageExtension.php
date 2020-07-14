@@ -104,8 +104,12 @@ class HeroicPageExtension extends HeroicContentExtension
         else {
             $site = SiteConfig::current_site_config();
         }
-        if (!$site->hasExtension(HeroicConfigExtension::class)) {
-            $site = null;
+        if (!is_null($site)) {
+            if (
+                !$site->hasExtension(HeroicConfigExtension::class)
+                && !$site->hasExtension(HeroicPageExtension::class)
+            )
+                $site = null;
         }
         $this->getOwner()->invokeWithExtensions('updateHeroicSite', $site);
         return $site;
