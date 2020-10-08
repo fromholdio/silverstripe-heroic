@@ -50,7 +50,7 @@ class HeroicContentExtension extends HeroicExtension
         $cta = null;
         if ($this->getOwner()->HeroicCTAID) {
             $cta = $this->getOwner()->HeroicCTA();
-            if (!$cta || !$cta->exists()) {
+            if (!$cta || !$cta->exists() || !$cta->HasTarget()) {
                 $cta = null;
             }
         }
