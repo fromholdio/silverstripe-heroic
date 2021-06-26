@@ -19,8 +19,8 @@
 		"fromholdio/silverstripe-minigridfield": "^1.0.3",
 		"fromholdio/silverstripe-simplevideo": "^1.0.0",
 		"fromholdio/silverstripe-superlinker-ctas": "^2.0.0",
-		"heyday/silverstripe-colorpalette": "dev-master",
-		"ryanpotter/silverstripe-color-field": "dev-master",
+		"heyday/silverstripe-colorpalette": "dev-master || ^3.0.0",
+		"ryanpotter/silverstripe-color-field": "dev-master || ^1.0.1",
 		"symbiote/silverstripe-gridfieldextensions": "^3.2",
 		"unclecheese/display-logic": "^2.0"
 	},
