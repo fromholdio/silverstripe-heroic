@@ -59,6 +59,10 @@ class HeroicExtension extends DataExtension
         'HeroicBackgroundVideo'
     ];
 
+    private static $cascade_duplicates = [
+        'HeroicBackgroundVideo'
+    ];
+
     private static $defaults = [
         'DoShowHeroic' => true,
         'UsePageTitleForHeroicHeadline' => true,

@@ -25,6 +25,10 @@ class HeroicContentExtension extends HeroicExtension
         'HeroicCTA'
     ];
 
+    private static $cascade_duplicates = [
+        'HeroicCTA'
+    ];
+
     private static $field_labels = [
         'HeroicHeadline' => 'Custom Headline',
         'HeroicCTA' => 'Button'

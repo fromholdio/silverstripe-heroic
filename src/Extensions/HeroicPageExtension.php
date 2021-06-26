@@ -31,6 +31,10 @@ class HeroicPageExtension extends HeroicContentExtension
         'HeroicSlides'
     ];
 
+    private static $cascade_duplicates = [
+        'HeroicSlides'
+    ];
+
     public function getHasMultipleHeroSlides()
     {
         $hasMultiple = false;
