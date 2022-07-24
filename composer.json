@@ -15,9 +15,9 @@
 	"require": {
 		"php": ">=7.0",
 		"silverstripe/vendor-plugin": "^1.0",
-		"silverstripe/cms": ">=4.2 <4.11",
+		"silverstripe/cms": "^4.11",
 		"fromholdio/silverstripe-minigridfield": "^1.0.3",
-		"fromholdio/silverstripe-simplevideo": "^1.0.0",
+		"fromholdio/silverstripe-simplevideo": "^2.0.0",
         "fromholdio/silverstripe-sortable": "^3.0.0",
 		"fromholdio/silverstripe-superlinker-ctas": "^2.0.0",
 		"heyday/silverstripe-colorpalette": "^2.0.4",
