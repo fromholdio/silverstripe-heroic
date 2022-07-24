@@ -15,7 +15,7 @@
 	"require": {
 		"php": ">=7.0",
 		"silverstripe/vendor-plugin": "^1.0",
-		"silverstripe/cms": "^4.2",
+		"silverstripe/cms": ">=4.2 <4.11",
 		"fromholdio/silverstripe-minigridfield": "^1.0.3",
 		"fromholdio/silverstripe-simplevideo": "^1.0.0",
         "fromholdio/silverstripe-sortable": "^3.0.0",
