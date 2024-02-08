@@ -13,17 +13,16 @@
 		"homepage": "https://fromhold.io"
 	}],
 	"require": {
-		"php": ">=7.0",
-		"silverstripe/vendor-plugin": "^1.0",
-		"silverstripe/cms": "^4.11",
-        "fromholdio/silverstripe-colorpalette": "^2.0.4",
+		"silverstripe/vendor-plugin": "^2",
+		"silverstripe/cms": "^5",
+        "fromholdio/silverstripe-colorpalette": "^3",
 		"fromholdio/silverstripe-minigridfield": "^1.0.3",
-		"fromholdio/silverstripe-simplevideo": "^2.0.0",
-        "fromholdio/silverstripe-sortable": "^3.0.0",
-		"fromholdio/silverstripe-superlinker-ctas": "^2.0.0",
-		"ryanpotter/silverstripe-color-field": "dev-master || ^1.0.1",
-		"symbiote/silverstripe-gridfieldextensions": "^3.2",
-		"unclecheese/display-logic": "^2.0"
+		"fromholdio/silverstripe-simplevideo": "^3",
+        "fromholdio/silverstripe-sortable": "^3",
+		"fromholdio/silverstripe-superlinker-ctas": "^3",
+		"ryanpotter/silverstripe-color-field": "^1",
+		"symbiote/silverstripe-gridfieldextensions": "^4",
+		"unclecheese/display-logic": "^3"
 	},
 	"autoload": {
 		"psr-4": {

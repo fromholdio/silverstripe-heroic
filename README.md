@@ -8,7 +8,7 @@ Also utilises fromholdio/silverstripe-featureimage if present (can be disabled v
 
 ## Requirements
 
-* [silverstripe-cms](https://github.com/silverstripe/silverstripe-framework) ^4
+* [silverstripe-cms](https://github.com/silverstripe/silverstripe-framework) ^4 or ^5
 
 ## Installation
 
