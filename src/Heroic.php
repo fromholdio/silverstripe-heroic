@@ -117,14 +117,27 @@ class Heroic
 
     public static function get_is_multisites_enabled()
     {
-        $exists = ModuleLoader::inst()->getManifest()
-            ->moduleExists('symbiote/silverstripe-multisites');
+        $manifest = ModuleLoader::inst()->getManifest();
+        $isMultisites = $manifest->moduleExists('symbiote/silverstripe-multisites')
+            || $manifest->moduleExists('fromholdio/silverstripe-configured-multisites');
 
-        if (!$exists) {
+        if (!$isMultisites) {
             return false;
         }
 
         return (bool) Config::inst()->get(self::class, 'enable_multisites');
+    }
+
+    public static function get_multisites_site_class_name(): ?string
+    {
+        $manifest = ModuleLoader::inst()->getManifest();
+        if ($manifest->moduleExists('symbiote/silverstripe-multisites')) {
+            return \Symbiote\Multisites\Model\Site::class;
+        }
+        if ($manifest->moduleExists('fromholdio/silverstripe-configured-multisites')) {
+            return \Fromholdio\ConfiguredMultisites\Model\Site::class;
+        }
+        return null;
     }
 
     public static function get_is_featureimage_enabled()

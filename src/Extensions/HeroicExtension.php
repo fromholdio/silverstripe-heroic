@@ -2,11 +2,11 @@
 
 namespace Fromholdio\Heroic\Extensions;
 
-use Fromholdio\SimpleVideo\Model\SimpleVideo;
+use Fromholdio\ColorPalette\Fields\ColorPaletteField;
 use Fromholdio\Heroic\Heroic;
 use Fromholdio\Heroic\Model\HeroicSlide;
 use Fromholdio\MiniGridField\Forms\HasOneMiniGridField;
-use Heyday\ColorPalette\Fields\ColorPaletteField;
+use Fromholdio\SimpleVideo\Model\SimpleVideo;
 use RyanPotter\SilverStripeColorField\Forms\ColorField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;

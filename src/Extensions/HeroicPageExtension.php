@@ -2,6 +2,7 @@
 
 namespace Fromholdio\Heroic\Extensions;
 
+use Fromholdio\Heroic\Heroic;
 use Fromholdio\Heroic\Model\HeroicSlide;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
@@ -14,7 +15,6 @@ use SilverStripe\Forms\Tab;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\SiteConfig\SiteConfig;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
-use Symbiote\Multisites\Model\Site;
 use UncleCheese\DisplayLogic\Forms\Wrapper;
 
 class HeroicPageExtension extends HeroicContentExtension
@@ -101,7 +101,7 @@ class HeroicPageExtension extends HeroicContentExtension
     {
         $site = null;
         if ($this->getOwner()->getIsHeroicMultisitesEnabled()) {
-            if (!is_a($this->getOwner(), Site::class)) {
+            if (!is_a($this->getOwner(), Heroic::get_multisites_site_class_name())) {
                 $site = $this->getOwner()->Site();
             }
         }
