@@ -8,7 +8,9 @@ Page:
 ---
 Name: fromholdio-heroic-nomultisites
 Except:
-  moduleexists: 'symbiote/silverstripe-multisites'
+  moduleexists:
+    - 'symbiote/silverstripe-multisites'
+    - 'fromholdio/silverstripe-configured-multisites'
 ---
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
